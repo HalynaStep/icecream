@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <!-- критический css используется при подключении стиля типа embedded (в файле, тег style в хеде) 
         для быстрой загрузки стилей на странице (используется для некоторых верхних секций до момента загрузки основного css) -->
@@ -25,24 +26,30 @@ Footer -->
 
 <body>
     <header class="header">
+        <div class="header-container">
         <nav class="navigation">
-            <a class="navigation-logo" href=""><img src="./images/logo.svg" alt="logo"></a>
-                <ul class="navigation-list">
-                    <li class="navigation-item"><a class="navigation-link" href="">Home</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="">About us</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="">How it's made?</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="">Our Products</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="">Contact</a></li>
-                </ul>
-            </nav>
+            <a class="navigation-logo" href=""><img src="./images/logo.svg" width="199" height="50" alt="logo"></a>
+            <ul class="navigation-list">
+                <li class="navigation-item"><a class="navigation-link" href="">Home</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="">About us</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="">How it's made?</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="">Our Products</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="">Contact</a></li>
+            </ul>
             <button class="navigation-btn btn" type="button">Buy now</button>
+        </nav>
+            
+        
+        </div>
+        
     </header>
     <main>
         <section class="hero">
+            <div class="container">
             <h1 class="hero-title">ice cream made with <span class="hero-title-acent">passion</span></h1>
             <ul class="hero-nav-list">
-                <li class="hero-nav-item"><a class="hero-nav-link" href="">Products</a></li>
-                <li class="hero-nav-item"><a class="hero-nav-link" href="">How it's made?</a></li>
+                <li class="hero-nav-item"><a class="hero-nav-link btn " href="">Products</a></li>
+                <li class="hero-nav-item"><a class="hero-nav-link btn" href="">How it's made?</a></li>
             </ul>
             <ul class="hero-list">
                 <li class="hero-item"><span class="hero-acent-item">16</span> cafes</li>
@@ -51,7 +58,7 @@ Footer -->
 
             <img src="./images/slider.png" alt="milk_hero_info">
             <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quod.</p>
-            
+        </div>
         </section>
         <section class="products">
             <p class="products-pre-title pre-title">100% natural</p>

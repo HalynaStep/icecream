@@ -23,6 +23,8 @@
     --btn-background-acent-color: #D41443;
     --btn-text-color: #D41443;
     --btn-text-acent-color: #FFFFFF;
+    --btn-border-color: #FFFFFF;
+    --btn-border-acent-color: #D41443;
 
     /* font-family */
     --font-family: "DM Sans", sans-serif;
@@ -31,12 +33,10 @@
 
 ul {
     list-style: none;
+    padding: 0;
     margin: 0;
 }
-p {
-    margin: 0;
-}
-h1,h2,h3 {
+p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -44,9 +44,21 @@ a {
     text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+}
+
 body {
-    font-family: --font-family;
+    font-family: var(--font-family);
     color: var(--text-first-color)
+}
+
+img {
+    display: block;
 }
 
 .visually-hidden {
@@ -63,15 +75,20 @@ body {
     overflow: hidden;
 }
 
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
 .btn {
-    background-color: var(--btn-background-color);
-    color: var(--btn-text-color);
-    
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
+    cursor: pointer;
+
+    border: 2px solid transparent;
+    border-radius: 22px;
 }
 
 .pre-title {
@@ -100,6 +117,29 @@ body {
 
 .header {
     background-color: var(--background-acent-color);
+    padding-top: 37px;
+}
+
+.header-container {
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    margin-left: 110px;
+}
+
+.navigation-item:not(:first-child) {
+    margin-left: 35px;
 
 }
 .navigation-link {
@@ -115,15 +155,27 @@ body {
     color: var(--link-acent-color);
     
 }
+.navigation-btn {
+    min-width: 160px;
+    height: 44px;
+    margin-left: 110px;
+
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
+    border-color: var(--btn-border-color);
+}
 
 /* HERO */
 
 .hero {
     background-color: var(--background-acent-color);
+    padding-top: 84px;
+    padding-bottom: 56px;
 }
 
 .hero-title {
     color: var(--title-acent-color);
+    width: 277px;
 
     font-family: var(--acent-font-family);
     font-weight: 400;
@@ -140,7 +192,25 @@ body {
     line-height: 0.9;
 }
 
+.hero-nav-list {
+    display: flex;
+}
+
+.hero-nav-item {
+    text-align: center;
+    
+    
+
+}
+
 .hero-nav-link {
+    display: block;
+    background-color: var(--btn-background-acent-color);
+    height: 40px;
+    min-width: 104px;
+
+
+    
     color: var(--link-acent-color);
 
     font-size: 14px;
