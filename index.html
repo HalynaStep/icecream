@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Icecream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- критический css используется при подключении стиля типа embedded (в файле, тег style в хеде) 
         для быстрой загрузки стилей на странице (используется для некоторых верхних секций до момента загрузки основного css) -->
-</head>
+  </head>
 
-<!-- Структура проекта.
+  <!-- Структура проекта.
 Hero header
 Products
 About
@@ -24,158 +33,270 @@ Customer Reviews
 Contacts
 Footer -->
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-container">
+      <div class="header-container">
         <nav class="navigation">
-            <a class="navigation-logo" href=""><img src="./images/logo.svg" width="199" height="50" alt="logo"></a>
-            <ul class="navigation-list">
-                <li class="navigation-item"><a class="navigation-link" href="">Home</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="">About us</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="">How it's made?</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="">Our Products</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="">Contact</a></li>
-            </ul>
-            <button class="navigation-btn btn" type="button">Buy now</button>
+          <a class="navigation-logo" href=""
+            ><img src="./images/logo.svg" width="199" height="50" alt="logo"
+          /></a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">About us</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">How it's made?</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Our Products</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Contact</a>
+            </li>
+          </ul>
+          <button class="navigation-btn btn" type="button">Buy now</button>
         </nav>
-            
-        
-        </div>
-        
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-            <h1 class="hero-title">ice cream made with <span class="hero-title-acent">passion</span></h1>
-            <ul class="hero-nav-list">
-                <li class="hero-nav-item"><button type="button" class="btn-hero-nav acent btn"><a class="hero-nav-link" href="">Products</a></button></li>
-                <li class="hero-nav-item"><button type="button" class="btn-hero-nav  btn"><a class="hero-nav-link" href="">How it's made?</a></button></li>
-            </ul>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrap">
+            <div class="hero-nav-wrap">
+              <h1 class="hero-title">
+                ice cream made with
+                <span class="hero-title-acent">passion</span>
+              </h1>
+              <ul class="hero-nav-list">
+                <li class="hero-nav-item acent">
+                  <a class="hero-nav-link acent" href="">Products</a>
+                </li>
+                <li class="hero-nav-item">
+                  <a class="hero-nav-link" href="">How it's made?</a>
+                </li>
+              </ul>
+            </div>
             <ul class="hero-list">
-                <li class="hero-item"><span class="hero-acent-item">16</span> cafes</li>
-                <li class="hero-item"><span class="hero-acent-item">23</span> food trucks</li>
+              <li class="hero-item">
+                <span class="hero-acent-item">16</span> cafes
+              </li>
+              <li class="hero-item">
+                <span class="hero-acent-item">23</span> food trucks
+              </li>
             </ul>
-
-            <img src="./images/slider.png" alt="milk_hero_info">
-            <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quod.</p>
+          </div>
+          <div class="hero-image-description-wrap">
+            <img src="./images/slider.png" alt="milk_hero_info" />
+            <div class="hero-description-wrap">
+              <p class="hero-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="hero-description-btn btn" type="button">+</button>
+            </div>
+          </div>
         </div>
-        </section>
-        <section class="products">
-            <p class="products-pre-title pre-title">100% natural</p>
-            <h2 class="products-title title">products</h2>
-            <ul class="products-list">
-                <li class="products-item">
-                    <img src="./images/icecream.png" alt="icecream_product">
-                    <h3 class="products-item-title">ice cream</h3>
-                    <p class="products-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure?</p>
-                    <button class="products-item-btn btn" type="button">+</button>
+      </section>
+      <section class="products">
+        <div class="container">
+          <p class="products-pre-title pre-title">100% natural</p>
+          <h2 class="products-title title">products</h2>
+          <ul class="products-list">
+            <li class="products-item icecream">
+              <img src="./images/icecream.png" alt="icecream_product" />
+              <h3 class="products-item-title">ice cream</h3>
+              <p class="products-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="products-item-btn btn" type="button">+</button>
+            </li>
+            <li class="products-item icecoffee">
+              <img src="./images/icecoffee.png" alt="icecoffee_product" />
+              <h3 class="products-item-title">ice coffee</h3>
+              <p class="products-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="products-item-btn btn" type="button">+</button>
+            </li>
+            <li class="products-item milkshakes">
+              <img src="./images/milkshakes.png" alt="milkshakes_product" />
+              <h3 class="products-item-title">milkshakes</h3>
+              <p class="products-item-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et
+              </p>
+              <button class="products-item-btn btn" type="button">+</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <p class="about-pre-title pre-title">tradition and love</p>
+          <h2 class="about-title title">how it's made?</h2>
+          <div class="about-wrap">
+            <img src="./images/milkandcow.png" alt="naturale_milk" />
+            <div class="about-description-wrap">
+              <p class="about-description-acent">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+                justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                eleifend erat at justo fringilla.
+              </p>
+              <p class="about-description">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt.
+                <br />
+                <br />
+                Aliquam erat volutpat. Aenean accumsan.
+              </p>
+              <button class="about-btn btn" type="button">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="visually-hidden">Advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <span class="advantages-acent-item">721</span> Aliquam ac dui vel
+              dui vulputate consectetur. Mauris massa.
+            </li>
+            <li class="advantages-item">
+              <span class="advantages-acent-item">16kg </span>Aliquam ac dui vel
+              dui vulputate consectetur. Mauris massa.
+            </li>
+            <li class="advantages-item">
+              <span class="advantages-acent-item">84</span> Aliquam ac dui vel
+              dui vulputate consectetur. Mauris massa.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Contacts</h2>
+          <ul class="contacts-cafe-list">
+            <li class="contacts-cafe-item">
+              <p class="contacts-cafe-name cafe">CAFE</p>
+              <p class="contacts-cafe-location">Chicago</p>
+              <p class="contacts-cafe-description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="contacts-work-list">
+                <li class="contact-work-item">
+                  <p class="contacts-work-day">Monday - Friday</p>
+                  <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
                 </li>
-                <li class="products-item">
-                    <img src="./images/icecoffee.png" alt="icecream_product">
-                    <h3 class="products-item-title">ice coffee</h3>
-                    <p class="products-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure?</p>
-                    <button class="products-item-btn btn" type="button">+</button>
+                <li class="contact-work-item">
+                  <p class="contacts-work-day">Saturday - Sunday</p>
+                  <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
                 </li>
-                <li class="products-item">
-                    <img src="./images/milkshakes.png" alt="icecream_product">
-                    <h3 class="products-item-title">milkshakes</h3>
-                    <p class="products-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure?</p>
-                    <button class="products-item-btn btn" type="button">+</button>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a class="contacts-link" href="tel:+61(0)383766284"
+                    >+61(0) 383 766 284</a
+                  >
                 </li>
-            </ul>
-        </section>
-        <section class="about">
-            <p class="about-pre-title pre-title">tradition and love</p>
-            <h2 class="about-title title">how it's made?</h2>
-            <img src="./images/milkandcow.png" alt="naturale_milk">
-            <p class="about-description-acent">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-            <p class="about-description">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-            <br>
-            <br>
-                Aliquam erat volutpat. Aenean accumsan.</p>
-            <button class="about-btn btn" type="button">Read more</button>
-        </section>
-        <section class="advantages">
-            <h2 class="visually-hidden">Advantages</h2>
-            <ul class="advantages-list">
-                <li class="advantages-item"><span class="advantages-acent-item">721</span> Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
-                <li class="advantages-item"><span class="advantages-acent-item">16kg </span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
-                <li class="advantages-item"><span class="advantages-acent-item">84</span> Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</li>
-            </ul>
-        </section>
-        <section class="contacts">
-            <h2 class="visually-hidden">Contacts</h2>
-            <ul class="contacts-cafe-list">
-                <li class="contacts-cafe-item">
-                    <p class="contacts-cafe-name">CAFE</p>
-                    <p class="contacts-cafe-location">Chicago</p>
-                    <p class="contacts-cafe-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <ul class="contacts-work-list">
-                        <li class="contact-work-item">
-                            <p class="contacts-work-day">Monday - Friday</p>
-                            <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
-                        </li>
-                        <li class="contact-work-item">
-                            <p class="contacts-work-day">Saturday - Sunday</p>
-                            <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
-                        </li>
-                    </ul>
-                    <ul class="contacts-list">
-                        <li class="contacts-item"><a class="contacts-link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-                        <li class="contacts-item"><a class="contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                    </ul>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
                 </li>
-                <li class="contacts-cafe-item">
-                    <p class="contacts-cafe-name">FOOD TRUCK</p>
-                    <p class="contacts-cafe-location">Los Angeles</p>
-                    <p class="contacts-cafe-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <ul class="contacts-work-list">
-                        <li class="contacts-work-item">
-                            <p class="contacts-work-day">Monday - Friday</p>
-                            <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
-                        </li>
-                        <li class="contacts-work-item">
-                            <p class="contacts-work-day">Saturday - Sunday</p>
-                            <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
-                        </li>
-                    </ul>
-                    <ul class="contacts-list">
-                        <li class="contacts-item"><a class="contacts-link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-                        <li class="contacts-item"><a class="contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                    </ul>
+              </ul>
+            </li>
+            <li class="contacts-cafe-item">
+              <p class="contacts-cafe-name foodtruck">FOOD TRUCK</p>
+              <p class="contacts-cafe-location">Los Angeles</p>
+              <p class="contacts-cafe-description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="contacts-work-list">
+                <li class="contacts-work-item">
+                  <p class="contacts-work-day">Monday - Friday</p>
+                  <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
                 </li>
-                <li class="contacts-cafe-item">
-                    <p class="contacts-cafe-name">CAFE</p>
-                    <p class="contacts-cafe-location">New York</p>
-                    <p class="contacts-cafe-description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                    <ul class="contacts-work-list">
-                        <li class="contacts-work-item">
-                            <p class="contacts-work-day">Monday - Friday</p>
-                            <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
-                        </li>
-                        <li class="contacts-work-item">
-                            <p class="contacts-work-day">Saturday - Sunday</p>
-                            <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
-                        </li>
-                    </ul>
-                    <ul class="contacts-list">
-                        <li class="contacts-item"><a class="contacts-link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
-                        <li class="contacts-item"><a class="contacts-link" href="mailto:noreply@envato.com">noreply@envato.com</a></li>
-                    </ul>
+                <li class="contacts-work-item">
+                  <p class="contacts-work-day">Saturday - Sunday</p>
+                  <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
                 </li>
-            </ul>
-            <button class="contacts-btn btn" type="button">Our Locations</button>
-            <button class="contacts-btn btn" type="button">Franchise</button>
-        </section>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a class="contacts-link" href="tel:+61(0)383766284"
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+              </li>
+            </li>
+            <li class="contacts-cafe-item">
+              <p class="contacts-cafe-name cafe">CAFE</p>
+              <p class="contacts-cafe-location">New York</p>
+              <p class="contacts-cafe-description">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <ul class="contacts-work-list">
+                <li class="contacts-work-item">
+                  <p class="contacts-work-day">Monday - Friday</p>
+                  <p class="contacts-work-time">06:00 AM - 10:00 PM</p>
+                </li>
+                <li class="contacts-work-item">
+                  <p class="contacts-work-day">Saturday - Sunday</p>
+                  <p class="contacts-work-time">08:00 AM - 16:00 PM</p>
+                </li>
+              </ul>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a class="contacts-link" href="tel:+61(0)383766284"
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:noreply@envato.com"
+                    >noreply@envato.com</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="contact-btn-wrap">
+            <li class="contact-btn-wrap-item"><button class="contacts-btn acent btn" type="button">Our Locations</button></li>
+            <li class="contact-btn-wrap-item"><button class="contacts-btn  btn" type="button">Franchise</button></li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <p class="pre-title">ice cream made <span class="title">with passion</span></p> 
-        <!-- в футере не используются заголовки -->
-        <p class="footer-contact">Feel free to contact <a class="footer-contact-link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></p>
-        <!-- Для открытия в новой вкладке target="_blank" для избежания взломов rel="noopener noreferrer" -->
-        <p class="footer-copyright">© 2023 - IceCream. All Rights Reserved. </p>
+        <div class="container">
+        <div class="footer-wrap">   
+      <p class="pre-title footer">
+        homemade ice cream made  <span class="title">with passion</span>
+      </p>
+      <!-- в футере не используются заголовки -->
+      <p class="footer-contact">
+        Feel free to contact
+        <a class="footer-contact-link" href="tel:+61(0)383766284"
+          >+61(0) 383 766 284</a
+        >
+      </p>
+      </div> 
+      <!-- Для открытия в новой вкладке target="_blank" для избежания взломов rel="noopener noreferrer" -->
+      <p class="footer-copyright">© 2023 - IceCream. All Rights Reserved.</p>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
-
