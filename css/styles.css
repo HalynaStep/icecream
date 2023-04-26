@@ -351,10 +351,18 @@ img {
   text-transform: uppercase;
 }
 
+.products-item-title::after {
+  content: "...";
+  display: block;
+  position: center;
+  margin-top: 32px;
+  letter-spacing: 0.06em;
+}
+
 .products-item-description {
   color: var(--text-second-color);
 
-  margin-top: 70px;
+  margin-top: 32px;
   padding-left: 44px;
   padding-right: 44px;
 
@@ -380,6 +388,10 @@ img {
 /* ABOUT */
 
 .about {
+  background-image: url("../images/sectionbg1\ 1-min.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   background-color: var(--background-color);
 
   padding-top: 125px;
@@ -388,7 +400,7 @@ img {
 
 .about-wrap {
   display: flex;
-  margin-top: 55px;
+  margin-top: 102px;
 }
 
 .about-description-wrap {
@@ -444,6 +456,36 @@ img {
   font-weight: 700;
   line-height: 1.76;
   letter-spacing: 0.02em;
+}
+
+.advantages-item:first-child::before {
+  content: "";
+  background-image: url("../images/icon1-min.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 33px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.advantages-item:nth-child(2)::before {
+  content: "";
+  background-image: url("../images/icon2-min.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.advantages-item:last-child::before {
+  content: "";
+  background-image: url("../images/icon3-min.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 44px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
 .advantages-acent-item {
@@ -528,8 +570,26 @@ img {
   letter-spacing: 0.04em;
 }
 
+.contacts-cafe-description::after {
+  content: "";
+  display: block;
+  width: 234px;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 32px;
+}
+
 .contacts-work-list {
-  margin-top: 64px;
+  margin-top: 32px;
+}
+
+.contacts-work-list::after {
+  content: "";
+  display: block;
+  width: 234px;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-top: 32px;
 }
 
 .contact-work-item:not(:first-child) {
@@ -552,7 +612,7 @@ img {
 }
 
 .contacts-list {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 .contacts-link {
   color: var(--link-second-color);
