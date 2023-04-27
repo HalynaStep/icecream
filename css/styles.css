@@ -138,6 +138,9 @@ img {
   align-items: center;
 }
 
+.logo-img {
+  display: inline-block;
+}
 .navigation-list {
   display: flex;
   align-items: center;
@@ -173,6 +176,18 @@ img {
 .navigation-btn:focus {
   background-color: #ecebeb;
   border-color: #ecebeb;
+}
+
+.btn-icon {
+  margin-left: 6px;
+  width: 6px;
+  height: 9px;
+
+  stroke: var(--btn-text-color);
+}
+
+.btn-icon.acent {
+  stroke: var(--btn-text-acent-color);
 }
 
 /* HERO */
@@ -295,6 +310,7 @@ img {
 
   font-size: 14px;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.4;
 }
 
@@ -302,6 +318,11 @@ img {
   margin-top: 20px;
   width: 26px;
   height: 26px;
+}
+
+.btn-arrow-right {
+  margin: auto auto;
+  fill: var(--btn-text-color);
 }
 
 /* PRODUCTS */
@@ -437,6 +458,12 @@ img {
   color: var(--btn-text-color);
 }
 
+.about-btn:hover,
+.about-btn:focus {
+  background-color: #ecebeb;
+  border-color: #ecebeb;
+}
+
 /* ADVANTAGES */
 .advantages {
   background-color: var(--background-color);
@@ -505,7 +532,11 @@ img {
   padding-top: 132px;
   padding-bottom: 165px;
 
-  background-color: var(--background-color);
+  background-image: url(../images/sectionbg2\ 1.png),
+    linear-gradient(to bottom, #fff 234px, var(--background-color) 15%-100%);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  background-size: contain;
 }
 
 .contacts-cafe-list {
@@ -521,6 +552,8 @@ img {
   padding-right: 43px;
 
   border-radius: 24px;
+
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
 .contacts-cafe-item:not(:first-child) {
@@ -672,7 +705,39 @@ img {
   width: 478px;
 }
 
+.footer-social-list {
+  display: flex;
+  justify-content: end;
+}
+
+.footer-social-item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+  color: var(--link-first-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--link-acent-color);
+}
+
+.footer-social-icon {
+  width: 65%;
+  height: 65%;
+  fill: currentColor;
+}
+
 .footer-contact {
+  margin-top: 50px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.86;
