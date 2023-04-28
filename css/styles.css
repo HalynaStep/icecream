@@ -145,6 +145,7 @@ img {
   display: flex;
   align-items: center;
   margin-left: 110px;
+  z-index: 3;
 }
 
 .navigation-item:not(:first-child) {
@@ -193,15 +194,42 @@ img {
 /* HERO */
 
 .hero {
+  position: relative;
   background-color: var(--background-acent-color);
   padding-top: 84px;
   padding-bottom: 56px;
-  z-index: -3;
 }
 
 .hero-wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.hero-wrap-left {
+  position: relative;
+}
+
+.hero-ellipse {
+  position: absolute;
+  top: -25%;
+  right: 140%;
+
+  width: 542px;
+  height: 542px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+}
+
+.hero-icecream-img {
+  position: absolute;
+  bottom: -12%;
+  right: 380%;
+}
+
+.hero-girl-img {
+  position: absolute;
+  bottom: -12%;
+  right: -50%;
 }
 
 .hero-title {
